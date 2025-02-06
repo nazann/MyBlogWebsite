@@ -18,7 +18,7 @@ A simple blog website built with Flask. This project allows users to register, l
 
 ### Requirements
 
-- Python 3.x
+- Python 3.13
 - Flask
 - Flask-Login
 - SQLAlchemy
