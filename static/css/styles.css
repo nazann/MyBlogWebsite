@@ -9,7 +9,46 @@
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
  */
+
+
+.commentList li {
+    display: flex; /* Aligns image and text in one row */
+    align-items: center; /* Vertically center-aligns image and text */
+    margin-bottom: 15px; /* Adds space between comments */
+  }
+
+.commenterImage img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fills the circular shape */
+    margin-right: 10px; /* Space between image and text */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+  }
+
+.commentText {
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack text and name vertically */
+
+}
+
+
+.sub-text {
+    font-size: 15px;
+    color: black; /* Optional: Style for the username */
+    margin-left: 5px; /* Small space between comment text and username */
+    vertical-align: middle; /* Aligns username vertically with text */
+    display: inline; /* Keeps it on the same line as the comment text */
+}
+.dateOfComment{
+    font-size: 10px;
+    color: gray;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
