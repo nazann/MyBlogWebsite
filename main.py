@@ -22,7 +22,7 @@ EMAIL=os.environ.get('EMAIL')
 #create flask app
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] =os.environ.get('FLASK_KEY')
 Bootstrap5(app)
 ckeditor = CKEditor(app)
 
@@ -242,4 +242,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5003)
+    app.run(debug=False)
